@@ -1,0 +1,66 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource/lato';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter Variable', sans-serif !important;
+  font-family: 'Lato', sans-serif;
+  
+}
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: white;
+}
+.tabsbg{
+  text-transform: none;
+  border: 1px solid #0eacb2;
+  border-radius: 3rem;
+  min-width: 60px;
+  height: 60px;
+  background-color: #0eacb2;
+  color: white;
+}
+.css-heg063-MuiTabs-flexContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+Button{
+  padding: 12px !important;
+}
+
+.text_color{
+  color: #4B4B4B;
+}
+
+.text{
+  color: #5F6D7E;
+}
+
+.heading_main{
+  font-weight: 700;
+  color: #272D37;
+  font-size: 40px;
+}
+.heading{
+  font-weight: 700;
+  color:#272D37;
+  font-size: 32px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
