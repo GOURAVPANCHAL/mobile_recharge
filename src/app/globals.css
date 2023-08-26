@@ -30,13 +30,24 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.redifining_product{
+  font-size: 32px;
+  font-weight: 600;
+}
 
 Button{
   padding: 12px !important;
 }
 
+.tabbox{
+  text-align: center;
+}
+
 .text_color{
   color: #4B4B4B;
+}
+.tabsLabel{
+  color: #0eacb2;
 }
 
 .text{
@@ -49,9 +60,9 @@ Button{
   font-size: 40px;
 }
 .heading{
-  font-weight: 700;
+  font-weight: 600 !important;
   color:#272D37;
-  font-size: 32px;
+  font-size: 32px !important;
 }
 
 a {

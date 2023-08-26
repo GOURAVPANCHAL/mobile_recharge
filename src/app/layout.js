@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import './globals.css'
+import Head from 'next/head'
 
 
 export const metadata = {
@@ -10,11 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <head>
+    <Head>
     <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.6/ui-grid.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.6/ui-grid.min.js"/>
-    </head>
+    </Head>
       <body>{children}</body>
     </html>
   )

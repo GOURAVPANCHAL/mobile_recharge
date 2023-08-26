@@ -6,6 +6,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Box, Container } from '@mui/material';
+import dynamic from 'next/dynamic';
 
 const page = () => {
     const [expanded, setExpanded] = React.useState(false);
@@ -16,11 +17,10 @@ const page = () => {
     return (
 
         <>
-            <Container sx={{ marginTop: { xs: '1rem !important', md: '2rem' },marginBottom:'3rem !important'}} style={{marginTop:'4rem', marginBottom:'4rem'}}>
-                <Box sx={{ marginBottom: { xs: '2rem !important', sm: '0rem' }}} style={{marginBottom:'4rem'}} >
-                    <Typography>
-                    <div style={{textAlign:'center'}}>
-                        <Typography sx={{ fontSize: { xs: '24px !important', sm: '24px', md:'40px !important' }}} className='heading_main' variant="h4" marginBottom='1rem'>Frequently Asked Questions</Typography>
+            <Container sx={{ mt: { xs: '1rem !important', md: '2rem' },mb:'3rem !important'}} style={{mt:'4rem', mb:'4rem'}}>
+                <Box sx={{ mb: { xs: '2rem !important', sm: '0rem' }}} style={{mb:'4rem'}} >
+                    <Typography style={{textAlign:'center'}}>
+                        <Typography sx={{ fontSize: { xs: '24px', sm: '24px', md:'40px' }}} fontWeight={700} className='heading_main' variant="h4" mb='1rem'>Frequently Asked Questions</Typography>
                         <Typography sx={{display: { xs: 'none', md: 'block' }}}  className='text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                         <Typography className='text'>
                          industry's standard dummy text ever since the 1500s, </Typography>
@@ -28,7 +28,6 @@ const page = () => {
                         <Typography className='text' sx={{ display: { md: 'none !important', sm: 'block' }}}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         </Typography>
-                    </div>
                     </Typography>
                 </Box>
 
@@ -134,4 +133,4 @@ const page = () => {
     )
 }
 
-export default page
+export default dynamic (()=> Promise.resolve(page),{ssr:false})
